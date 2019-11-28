@@ -1,0 +1,479 @@
+/* #100F3A */
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: rgb(248, 248, 248);
+    color: #555;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size : 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* REUSEABLE SECTION */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 0 50px 0;
+}
+
+hr {
+    width: 120px;
+    border: none;
+    border-bottom: 7px dotted #969994;
+    margin: 0 auto;
+}
+
+abbr[title] {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 240%;
+    color: #fff;
+    margin-top: 0;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 180%;
+    font-weight: 300;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+h2::after {
+    display: block;
+    content: " ";
+    width: 150px;
+    height: 2px;
+    background-color: #b7bab5;
+    margin: 30px auto;
+}
+
+h3 {
+    font-size: 150%;
+    color: #fff;
+    margin-top: 0;
+    font-weight: 300;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #7f8c8d;
+    border-radius: 100px;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+    border: 1.5px solid #b7bab5;
+    color: #b7bab5;
+    -webkit-transition: border 0.2s, background-color 0.2s, color 0.2s;
+    transition: border 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.btn-outline:hover,
+.btn-outline:active{
+    border: 1.5px solid #8d9288;
+    background-color: #8d9288;
+    color: #fff;
+}
+
+.disabled {
+    cursor: default;
+    color: #b1b1b1;
+    border: 1px solid #b1b1b1;
+    padding: 5px 15px;
+    font-size: 93%;
+}
+
+
+.button {
+    margin-top: 30px;
+}
+
+
+/* to the top */
+.js--to-the-top{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    color: #555;
+}
+
+.js--to-the-top i {
+    font-size: 120%;
+}
+
+/* Icons */
+.icon-big {
+    color: #192a56;
+    font-size: 300%;
+    margin-bottom: 30px;
+}
+
+
+/* ==================== */
+/* HEADER */
+/* ==================== */
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(./img/IMG_20180629_134623.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/IMG_20180629_134623.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Navigation */
+/* Main-nav */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-nav li:last-of-type {
+    margin-right: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #7f8c8d;
+}
+
+/* Mobile-nav */
+.mobile-nav-icon {
+    color: rgb(192, 192, 192);
+    float: right;
+    margin-top : 20px;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Whiteky-nav */
+.whiteky {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.whiteky .main-nav {
+    margin: 25px;
+    margin-bottom: 12px;
+}
+
+.whiteky .main-nav li a:link,
+.whiteky .main-nav li a:visited{
+    color: #555;
+    padding: 11px 0;
+}
+
+.whiteky .main-nav li a:hover,
+.whiteky .main-nav li a:active {
+    border-bottom: 2px solid #7f8c8d;
+}
+
+.hero-text {
+    width: 1140px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+/* ==================== */
+/* ABOUT */
+/* ==================== */
+.about-text {
+    width: 65%;
+    margin: auto;
+    line-height: 130%;
+    text-align: justify;
+    font-size: 95%;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+/* ==================== */
+/* EDUCATION */
+/* ==================== */
+
+.education-section .box {
+    padding: 10px;
+}
+
+.education-section h3 {
+    color: #555;
+    font-size: 140%;
+}
+
+.education-section p {
+    margin-top: 20px;
+    font-size : 90%;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+
+/* ==================== */
+/* SKILLS */
+/* ==================== */
+.progress {
+    padding: 0 10px;
+}
+
+.skill-name {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.skill-value {
+    margin-left: 20px;
+    width: 60%;
+    height: 10px;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    vertical-align: middle;
+}
+
+progress::-moz-progress-bar {
+    background-image: linear-gradient(to right, #2f3640, #40739e, #192a56)
+}
+
+progress::-webkit-progress-value {
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f3640), color-stop(#40739e), to(#192a56));
+    background-image: linear-gradient(to right, #2f3640, #40739e, #192a56)
+}
+
+/* ==================== */
+/* PROJECT */
+/* ==================== */
+.project-section {
+    color: #100F3A;
+}
+
+
+.project-name h3{
+    font-size: 130%;
+    color: #555;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.project-img {
+    background-color: rgb(63, 63, 63);
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.project-img img:hover {
+    opacity: 0.95;
+    transform: scale(1);
+}
+
+.project-body {
+    color: #100F3A;
+    text-align: center;
+}
+
+.project-text {
+    margin: 20px 0;
+}
+
+.coming-soon h3{
+    padding-top: 40px;
+    color: #100F3A;
+}
+
+.project-btn:link,
+.project-btn:visited{
+    color: #100F3A;
+    border: 1px solid #100F3A;
+    padding: 5px 15px;
+    font-size: 93%;
+    margin-left: 10px;
+    -webkit-transition: background-color 0.2s , color 0.2s;
+    transition: background-color 0.2s , color 0.2s;
+}
+
+.project-btn:hover,
+.project-btn:active {
+    cursor: pointer;
+    background-color: #100F3A;
+    color: #b7bab5;
+}
+
+/* ==================== */
+/* CONTACT */
+/* ==================== */
+.form-label {
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+
+.form-input {
+    width: 70%;
+    padding: 7px;
+    font-weight: 300;
+    border: 1px solid #b7bab5;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+textarea {
+    height: 90px;
+}
+
+.form-input:hover{
+    border: 1.5px solid rgb(65, 65, 65);
+}
+
+.form-input:focus{
+    border: 1px solid rgb(2, 0, 122);
+}
+
+
+.form-btn{
+    display: inline-block;
+    color: #100F3A;
+    border: 1px solid #100F3A;
+    border-radius: 100px;
+    padding: 10px 25px;
+    -webkit-transition: background-color .03s , color 0.3s;
+    transition: background-color .03s , color 0.3s;
+}
+
+.form-btn:hover{
+    cursor: pointer;
+    background-color: #100F3A;
+    color: #b7bab5;
+}
+
+/* ==================== */
+/* FOOTER */
+/* ==================== */
+footer {
+    background-color: #242424;
+    padding: 50px 50px 40px 50px;
+}
+
+.footer-text {
+    padding-left: 40px;
+    color: #b7bab5;
+    font-size: 90%;
+}
+
+.social-nav {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.social-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.social-nav li i {
+    color: #b7bab5;
+    font-size: 95%;
+}
+
+.fa-facebook-square:hover,
+.fa-facebook-square:active {
+    color: #3b5999;
+}
+
+.fa-instagram:hover,
+.fa-instagram:active {
+    color: #e4405f;
+}
+
+.fa-github:hover,
+.fa-github:active {
+    color: #6c7074;
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 80%;
+}
+
+/* ==================== */
+/* ANIMATION */
+/* ==================== */
+.js--wp-0,
+.js--wp-0-1,
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.animate.js--wp-0,
+.animate.js--wp-0-1,
+.animate.js--wp-1,
+.animate.js--wp-2,
+.animate.js--wp-3,
+.animate.js--wp-4,
+.animate.js--wp-5,
+.animate.js--wp-6 {
+    opacity: 1;
+}

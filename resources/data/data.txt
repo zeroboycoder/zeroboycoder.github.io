@@ -1,0 +1,40 @@
+** Who am I?
+I'm 18 years old web developer.
+Founder of Future Information Technology Team.
+
+See more
+
+** About Me
+I'm 18 years old web developer. I studied Web development field since 17 years old.
+
+** Education
+2005 - 2009
+I studied for KG to Gread (4) in Basic Education Middle School, Sangyi, Mawlamyine.
+
+2009-2017
+I studied for Gread (5) to (10) in No.6 Basic Education High School, Mawlamyine.
+
+2017- Now
+I studying Information Technologies in Technological University, Mawlamyine
+
+** Skills
+HTML - 70
+CSS - 65
+JavaScript - 60
+Node.js - 75
+MongoDb - 65
+
+** Projects
+Weather API App
+Students' Marks Management System
+
+** Contact
+name
+email
+content
+
+** Footer
+FB - https://m.facebook.com/pyaesonekhant.zeroboy
+
+IG - 
+https://www.instagram.com/pyaesonekhant1234

@@ -1,0 +1,252 @@
+/* Width from 1024px to 1200px */
+/* For small laptops */
+@media only screen and (max-width:1200px) {
+    * {
+        font-size: 19px;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .btn {
+        font-size: 95%;
+        margin-bottom: 4%;
+    }
+}
+
+/* Width from 768px to 1024 */
+/* For lanscape tabs */
+@media only screen and (max-width:1023px) {
+    * {
+        font-size : 18px;
+    }
+
+    .main-nav li {
+        margin-right: 7px;
+    }
+
+    h1 {
+        font-size: 220%;
+    }
+
+    h2 {
+        font-size: 170%;
+    }
+
+    h3 {
+        font-size: 140%;
+    }
+
+    .about-text {
+        width: 75%;
+    }
+
+    .footer-text {
+        padding-left: 25px;
+    }
+    .social-nav li {
+        margin-left: 25px;
+    }
+}
+
+/* Width from 481px to 768px */
+/* For portrait tabs */
+@media only screen and (max-width:767px) {
+    * {
+        font-size: 16px;
+    }
+
+    .row{
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .span-1-of-3 {
+        margin-bottom: 4%;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .main-nav{
+        float: left;
+        margin-top : 20px;
+    }
+
+    .main-nav li {
+        display: block;
+        padding: 12px 0;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 0;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 2px solid #7f8c8d;
+    }
+
+    .mobile-nav-icon{
+        display: block;
+        margin-top: 28px;
+    }
+
+    .mobile-nav-icon i{
+        font-size: 130%;
+    }
+
+    .whiteky .mobile-nav-icon {
+        margin: 0;
+        color: #8d8d8d;
+        padding: 12px 0;
+    }
+
+    .about-text{
+        font-size: 100%;
+        width: 80%;
+    }
+
+    .education-section p {
+        font-size : 100%;
+    }
+
+    .skill-name {
+        text-align: left;
+        padding-left: 30px;
+        font-size: 110%;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+
+    .skill-value {
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+    .btn abbr{
+        font-size: 120%;
+        padding: 5px 8px;
+    }
+
+    .coming-soon h3 {
+        padding-top: 20px;
+    }
+
+    .form-label {
+        text-align: left;
+        padding: 15px 0 7px 10px;
+        margin: 0;
+    }
+
+    .form-input {
+        width: 90%;
+        padding: 7px;
+        margin: 0 auto;
+    }
+
+    .footer-text {
+        font-size: 95%;
+        padding-left: 0px;
+    }
+    
+    .footer-text {
+        padding-bottom: 10px;
+    }
+
+    .social-nav li {
+        margin-left: 25px;
+    }
+
+    .social-nav li:first-child {
+        margin: 0;
+    }
+
+    .copyright p{
+        font-size: 85%;
+    }
+}
+
+/* Width from 0px to 480px */
+/* For moblie phone */
+@media only screen and (max-width:480px) {
+    .row{
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .span-1-of-3 {
+        margin-bottom: 6%;
+    }
+
+    h2 {
+        font-size: 160%;
+    }
+
+    h2::after {
+        width: 130px;
+    }
+
+    .about-text{
+        font-size: 100%;
+        width: 85%;
+    }
+
+    .education-section p {
+        font-size : 100%;
+    }
+
+    .skill-name {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 110%;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+
+    .skill-value {
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+    .form-label {
+        text-align: left;
+        padding: 20px 0 15px 7px;
+        margin: 0;
+    }
+
+    .form-input {
+        width: 90%;
+        padding: 7px;
+        margin: 0 auto;
+    }
+
+    .footer-text {
+        padding-bottom: 10px;
+    }
+
+    footer {
+        padding: 50px 50px 40px 40px;
+    }
+}
