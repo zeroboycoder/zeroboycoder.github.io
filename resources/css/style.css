@@ -102,7 +102,7 @@ h3 {
 }
 
 .disabled {
-    cursor: default;
+    cursor: not-allowed;
     color: #b1b1b1;
     border: 1px solid #b1b1b1;
     padding: 5px 15px;
